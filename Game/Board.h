@@ -349,27 +349,27 @@ private:
     // Записывает ошибки в лог-файл
     void print_exception(const string& text) {
         ofstream fout(project_path + "log.txt", ios_base::app);
-        fout << "Error: " << text << ". "<< SDL_GetError() << endl;
+        fout << "Error: " << text << ". " << SDL_GetError() << endl;
         fout.close();
     }
 
-  public:
+public:
     int W = 0;// Ширина окна
     int H = 0; // Высота окна
     // История состояний доски
     vector<vector<vector<POS_T>>> history_mtx;
 
-  private:
-    SDL_Window *win = nullptr; // Указатель на окно SDL
-    SDL_Renderer *ren = nullptr; // Указатель на рендерер SDL
+private:
+    SDL_Window* win = nullptr; // Указатель на окно SDL
+    SDL_Renderer* ren = nullptr; // Указатель на рендерер SDL
     // Текстуры для доски и шашек
-    SDL_Texture *board = nullptr;
-    SDL_Texture *w_piece = nullptr;
-    SDL_Texture *b_piece = nullptr;
-    SDL_Texture *w_queen = nullptr;
-    SDL_Texture *b_queen = nullptr;
-    SDL_Texture *back = nullptr;
-    SDL_Texture *replay = nullptr;
+    SDL_Texture* board = nullptr;
+    SDL_Texture* w_piece = nullptr;
+    SDL_Texture* b_piece = nullptr;
+    SDL_Texture* w_queen = nullptr;
+    SDL_Texture* b_queen = nullptr;
+    SDL_Texture* back = nullptr;
+    SDL_Texture* replay = nullptr;
     // Пути к файлам текстур
     const string textures_path = project_path + "Textures/";
     const string board_path = textures_path + "board.png";
