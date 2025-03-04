@@ -6,13 +6,10 @@
 #include "../Models/Move.h"
 #include "../Models/Project_path.h"
 
-#ifdef __APPLE__
-    #include <SDL.h>
-    #include <SDL_image.h>
-#else
-    #include <SDL.h>
-    #include <SDL_image.h>
-#endif
+
+#include <SDL.h>
+#include <SDL_image.h>
+
 
 using namespace std;
 

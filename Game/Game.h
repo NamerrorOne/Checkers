@@ -11,7 +11,7 @@
 class Game
 {
   public:
-    Game() : board(config("WindowSize", "Width"), config("WindowSize", "Hight")), hand(&board), logic(&board, &config)
+    Game() : board(config("WindowSize", "Width"), config("WindowSize", "Hight")), hand(&board), logic(&board, &config), beat_series(0), is_replay(false)
     {
         ofstream fout(project_path + "log.txt", ios_base::trunc);
         fout.close();

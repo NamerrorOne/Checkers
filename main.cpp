@@ -1,4 +1,4 @@
-#include "Game/Game.h"
+﻿#include "Game/Game.h"
 #include <nlohmann/json.hpp>
 int WinMain(int argc, char* argv[])
 {
@@ -7,3 +7,4 @@ int WinMain(int argc, char* argv[])
 
     return 0;
 }
+
